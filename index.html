@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Cunha Zortéa — Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+
+    <div class="container">
+        <!--barra de cima que tem os itens-->
+        <header class="navbar" style="margin-bottom: 0; padding-bottom: 0;">
+            <div class="nav-left">
+                <nav aria-label="Primary Navigation">
+                    <ul class="nav-links">
+                        <li><a href="#sobre">Sobre mim</a></li>
+                        <li><a href="#conhecimentos">Conhecimentos</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <button id="btn-tema" type="button" aria-pressed="false">Alternar Tema</button>
+        </header>
+
+        <!-- coisas escritas grandes no meio da página -->
+        <main>
+            <section class="hero">
+                <p class="nome">Eduardo Cunha Zortéa</p>
+
+                <h1 class="funcao">
+                    Desenvolvedor Full-stack
+                </h1>
+                    <p><span class="highlight-pink">Java | JS | HTML | CSS | IA</span></p>
+                    
+                    
+
+                <p class="divulgacao-projetos">
+                    Veja meus <a href="#projetos">projetos  &rarr;</a>
+                </p>
+            </section>
+
+            <!-- seções que conectam com a barra de cima-->
+            <section id="sobre" class="secao">
+                <p class="section-label">01 | Sobre mim</p>
+                <h2 class="section-heading">Sou um estudante de engenharia de software, atualmente no 2° semestre na Universidade Católica do Salvador (UCSAL)</h2>
+                <div class="grid-cards">
+                    <article class="card">
+                        <span class="card-tag">Interesses</span>
+                        <button>Mostrar mais</button>
+                    </article>
+                    <article class="card">
+                        <span class="card-tag">Planos</span>
+                        <button>Mostrar mais</button>
+                    </article>
+                </div>
+            </section>
+
+            <section id="conhecimentos" class="secao">
+                <p class="section-label">02 | Meus conhecimentos</p>
+                <h2 class="section-heading">Tecnologias que eu tenho familiaridade</h2>
+                <div class="grid-cards">
+                    <article class="card-tec">
+                        <span class="card-tag">java</span>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Logo do Java" width="32" height="32" style="vertical-align: middle; margin-left: 8px;">
+                    </article>
+                    <article class="card-tec">
+                        <span class="card-tag">HTML</span>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo do HTML5" width="32" height="32" style="vertical-align: middle; margin-left: 8px;">
+                    </article>
+                    <article class="card-tec">
+                        <span class="card-tag">CSS</span>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Logo do CSS" width="32" height="32" style="vertical-align: middle; margin-left: 8px;">
+                    </article>
+                    <article class="card-tec">
+                        <span class="card-tag">Java Script</span>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Logo do JavaScript" width="32" height="32" style="vertical-align: middle; margin-left: 8px;">
+                    </article>
+                    <article class="card-tec">
+                        <span class="card-tag">I.A.</span>
+                        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/960px-Claude_AI_symbol.svg.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo do claude" width="32" height="32" style="vertical-align: middle; margin-left: 8px;">
+                    </article>
+                </div>
+            </section>
+
+            <section id="projetos" class="section">
+                <p class="section-label">03 | Projetos</p>
+                <h2 class="section-heading">Projetos desenvolvidos por mim</h2>
+                <div class="grid-cards">
+                    <article class="card">
+                        <span class="card-tag">Projeto 1</span>
+                        <h3>Site do Esporte Clube Vitória</h3>
+                        <a href="http://127.0.0.1:5500/siteDoVitoria.html" target="_blank">Site do Vitória</a>
+                        <button>O que utilizei e aprendi</button>
+                        
+                    </article>
+                    <article class="card">
+                        <span class="card-tag">Projeto 2</span>
+                        <h3>Meu portfólio</h3>
+                        <a href="http://127.0.0.1:5500/index.html" target="_blank">Meu portfólio</a>
+                        <button>O que utilizei e aprendi</button>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contato" class="section">
+                <div class="contact-box">
+                    <div>
+                        <p class="section-label">04 | Entre em contato</p>
+                        <form id="form-contato">
+                            <label for="contato-nome">Nome</label>
+                            <input type="text" id="contato-nome" name="nome" required>
+
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" required></textarea>
+
+                            <a href="mailto:zorteaeduardo81@gmail.com" class="btn-contatar">enviar</a>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span>2026 Eduardo Cunha Zortéa</span>
+            <span>Salvador-BA, Brasil</span>
+            <Span>Desenvolvido como atividade da disciplina de Programação Front-End (UCSAL)</Span>
+        </footer>
+    </div>
+
+</body>
+</html>
